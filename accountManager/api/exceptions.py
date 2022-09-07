@@ -1,12 +1,12 @@
-from ..exceptions import General as RootGeneral
-from pullgerExceptions import updateLoggerNameInKWARGS
+from ..exceptions import General as _RootGeneral
+from pullgerExceptions import updateLoggerNameInKWARGS as _updateLoggerNameInKWARGS
 
-class General(RootGeneral):
+class General(_RootGeneral):
     def __init__(self, message, **kwargs):
-        updateLoggerNameInKWARGS('api', kwargs)
+        _updateLoggerNameInKWARGS('api', kwargs)
         super().__init__(message, **kwargs)
 
 class IncorrectInputData(General):
     def __init__(self, message, **kwargs):
-        updateLoggerNameInKWARGS('IncorrectInputData', kwargs)
+        _updateLoggerNameInKWARGS('IncorrectInputData', kwargs)
         super().__init__(message, **kwargs)

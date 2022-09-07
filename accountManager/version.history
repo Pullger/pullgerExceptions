@@ -1,5 +1,9 @@
 #Vesion history [pullgerException.accountManager]
 
+# {0.0.2.0} [pullgerException.accountManager]
+#  - hide libraries in sub-mudule
+#  - fixed version control (add import in __init__)
+
 # {0.0.1.0} [pullgerException.accountManager]
 #  - refactor code to standard syntax
 
