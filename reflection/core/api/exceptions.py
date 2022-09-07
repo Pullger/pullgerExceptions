@@ -3,16 +3,11 @@ from pullgerExceptions import updateLoggerNameInKWARGS
 
 class General(RootGeneral):
     def __init__(self, message, **kwargs):
-        updateLoggerNameInKWARGS('model', kwargs)
+        updateLoggerNameInKWARGS('api', kwargs)
 
         super().__init__(message, **kwargs)
 
-class Error(General):
+class IncorectInputArguments(General):
     def __init__(self, message, **kwargs):
-        updateLoggerNameInKWARGS('error', kwargs)
-        super().__init__(message, **kwargs)
-
-class Dublication(General):
-    def __init__(self, message, **kwargs):
-        updateLoggerNameInKWARGS('dublication', kwargs)
+        updateLoggerNameInKWARGS('IncorectInputArguments', kwargs)
         super().__init__(message, **kwargs)

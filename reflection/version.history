@@ -1,0 +1,8 @@
+#Vesion history [pullgerException.reflection]
+
+# {0.0.1.0} [pullgerException.reflection]
+# - add version control for sub-module
+# - refactor call of updateLoggerNameInKWARGS function
+
+# {0.0.0.0} [pullgerException.reflection]
+# - initialization version
