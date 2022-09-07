@@ -1,12 +1,12 @@
-from ..exceptions import General as RootGeneral
+from ..exceptions import General as _RootGeneral
 from pullgerExceptions import updateLoggerNameInKWARGS as _updateLoggerNameInKWARGS
 
-class General(RootGeneral):
+class General(_RootGeneral):
     def __init__(self, message, **kwargs):
-        _updateLoggerNameInKWARGS('Connection', kwargs)
+        _updateLoggerNameInKWARGS('pages', kwargs)
         super().__init__(message, **kwargs)
 
-class System(General):
+class Incorrect(General):
     def __init__(self, message, **kwargs):
-        _updateLoggerNameInKWARGS('System', kwargs)
+        _updateLoggerNameInKWARGS('incorrect', kwargs)
         super().__init__(message, **kwargs)

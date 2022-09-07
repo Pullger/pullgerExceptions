@@ -1,11 +1,11 @@
-from pullgerExceptions import updateLoggerNameInKWARGS
+from pullgerExceptions import updateLoggerNameInKWARGS as _updateLoggerNameInKWARGS
 
 class General(BaseException):
     def __init__(self, message, **kwargs):
         super().__init__(message)
         # Logger initialization
         import logging
-        updateLoggerNameInKWARGS('pullgerDomain', kwargs)
+        _updateLoggerNameInKWARGS('pullgerDomain', kwargs)
 
         logger = logging.getLogger(kwargs['loggerName'])
 
@@ -22,11 +22,11 @@ class General(BaseException):
 
 class Initialization(General):
     def __init__(self, message, **kwargs):
-        updateLoggerNameInKWARGS('Initialization', kwargs)
+        _updateLoggerNameInKWARGS('Initialization', kwargs)
         super().__init__(message, **kwargs)
 
 class Processing(General):
     def __init__(self, message, **kwargs):
-        updateLoggerNameInKWARGS('Processing', kwargs)
+        _updateLoggerNameInKWARGS('Processing', kwargs)
         super().__init__(message, **kwargs)
 

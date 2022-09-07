@@ -1,5 +1,11 @@
 #Vesion history [pullgerException.domain]
 
+# {0.0.2.1} [pullgerException.domain]
+#  - hide libraries in sub-module
+
+# {0.0.2.0} [pullgerException.domain]
+#  - added new exception category "pages"
+
 # {0.0.1.1} [pullgerException.domain]
 #  - fix incorrect call of module
 

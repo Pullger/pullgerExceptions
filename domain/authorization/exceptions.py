@@ -1,18 +1,18 @@
-from ..exceptions import General as RootGeneral
-from pullgerExceptions import updateLoggerNameInKWARGS
+from ..exceptions import General as _RootGeneral
+from pullgerExceptions import updateLoggerNameInKWARGS as _updateLoggerNameInKWARGS
 
-class General(RootGeneral):
+class General(_RootGeneral):
     def __init__(self, message, **kwargs):
-        updateLoggerNameInKWARGS('Authorization', kwargs)
+        _updateLoggerNameInKWARGS('Authorization', kwargs)
         super().__init__(message, **kwargs)
 
 class InputProcess(General):
     def __init__(self, message, **kwargs):
-        updateLoggerNameInKWARGS('InputProcess', kwargs)
+        _updateLoggerNameInKWARGS('InputProcess', kwargs)
         super().__init__(message, **kwargs)
 
 class ResultCheck(General):
     def __init__(self, message, **kwargs):
-        updateLoggerNameInKWARGS('InputProcess', kwargs)
+        _updateLoggerNameInKWARGS('InputProcess', kwargs)
         super().__init__(message, **kwargs)
 
