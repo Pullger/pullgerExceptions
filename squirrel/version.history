@@ -1,0 +1,8 @@
+#Vesion history [pullgerException.squirrel]
+
+# {0.0.2.0} [pullgerException.squirrel]
+# - transfered version history to separate file
+# - add exception on incorrect chrome version driver
+
+# {0.0.1.0} [pullgerException.squirrel]
+#  - initialization version
