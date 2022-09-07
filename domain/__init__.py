@@ -1,3 +1,3 @@
 from .exceptions import *
-from . import authorisation
+from . import authorization
 from . import connect

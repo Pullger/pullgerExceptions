@@ -1,5 +1,8 @@
 #Vesion history [pullgerException.domain]
 
+# {0.0.1.1} [pullgerException.domain]
+#  - fix incorrect call of module
+
 # {0.0.1.0} [pullgerException.domain]
 #  - refactor code to standard syntax
 
