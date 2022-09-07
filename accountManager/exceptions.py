@@ -1,10 +1,11 @@
+from pullgerExceptions import updateLoggerNameInKWARGS
+
 class General(BaseException):
     def __init__(self, message, **kwargs):
         super().__init__(message)
         # Logger initialization
         import logging
-        from pullgerExceptions import updateLoggerNameInKWARGS
-        updateLoggerNameInKWARGS('pullgerSquirrel', kwargs)
+        updateLoggerNameInKWARGS('pullgerAccountManager', kwargs)
 
         logger = logging.getLogger(kwargs['loggerName'])
 
