@@ -1,8 +1,11 @@
 #Vesion history [pullgerExceptions]
 
+# {0.1.1.0} [pullgerExceptions]
+# - update sub-module {0.0.2.1} [pullgerException.domain]
+# - update sub-module {0.0.2.0} [pullgerException.accountManager]
+
 # {0.1.0.1} [pullgerExceptions]
 # - update sub-module {0.0.1.1} [pullgerException.domain]
-
 
 # {0.1.0.0} [pullgerExceptions]
 # - Transfered exceptions from pullgerSquirrel
